@@ -11,7 +11,7 @@ if !EtherCoordinator.shared.hasAccount {
  try? EtherCoordinator.shared.generateAccount(password: "ABCDEFG")
  //You can check your mnemonics using this variable, and show them to your user
  print(EtherCoordinator.shared.mnemonics)
- print(EtherCoordinator.shared.privateKey(password: "ABCDEFG"))
+ print(try? EtherCoordinator.shared.privateKey(password: "ABCDEFG"))
 } else {
  // password will be encrypted and saved to the device and it will be required to access the wallet.
  // Import an existing account from his private key and set its new password.
