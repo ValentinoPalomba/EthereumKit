@@ -2,7 +2,7 @@
 <img src="https://i.pinimg.com/originals/67/dd/e5/67dde5ca7606d1aef2a9b3b9e519d457.png" alt="EthereumKit" height="300px">
 </p>
 
-EthereumWalletKit is a Swift framework that enables you to create Ethereum wallet and use it in your app, without having deep knowledge of Blockachain and Smart Contracts.
+EthereumWalletKit is a Swift framework that enables you to create Ethereum wallet and use it in your app, without having deep knowledge of Blockchain and Smart Contracts.
 
 ```swift
  // Check if you had ever added an Account, if not you will need to generate your account, this method also generate your mnemonich phrase and save your keystore locally
