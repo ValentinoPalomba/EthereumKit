@@ -8,10 +8,10 @@
 import Foundation
 import web3swift
  
-class EtherCoordinator {
-    static let shared = EtherCoordinator()
+public class EtherCoordinator {
+    static public let shared = EtherCoordinator()
     
-    var web3Instance : web3 {
+    public var web3Instance : web3 {
         return Web3.InfuraMainnetWeb3()
     }
     
@@ -20,9 +20,9 @@ class EtherCoordinator {
     let mnemonicsKeystoreKey = "mnemonicsKeystoreKey"
     let defaultGasLimitForTokenTransfer = 100000
     
-    var transactionOptions: TransactionOptions = .defaultOptions
+    public var transactionOptions: TransactionOptions = .defaultOptions
     
-    var keystoreCache: EthereumKeystoreV3?
+    public var keystoreCache: EthereumKeystoreV3?
 }
 
 enum defaultKey : String {

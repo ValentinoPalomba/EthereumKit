@@ -21,16 +21,16 @@ public protocol AccountService {
 }
 
 extension EtherCoordinator : AccountService {
-    var hasAccount: Bool {
+    public var hasAccount: Bool {
         return (try? loadKeystore()) != nil
     }
     
-    var address: String? {
+    public var address: String? {
         guard let keystore = try? loadKeystore() else {return nil}
         return keystore.getAddress()?.address
     }
     
-    var mnemonics: String? {
+    public var mnemonics: String? {
         get {
             defaults.string(forKey: defaultKey.mnemonics.rawValue)
         }
@@ -43,7 +43,7 @@ extension EtherCoordinator : AccountService {
         }
     }
     
-    func privateKey(password: String) throws -> String {
+    public func privateKey(password: String) throws -> String {
         let keystore = try loadKeystore()
         guard let address = keystore.getAddress()?.address else {
             throw WalletError.malformedKeystore
@@ -57,11 +57,11 @@ extension EtherCoordinator : AccountService {
         return privateKeyData.toHexString()
     }
     
-    func verifyPassword(_ password: String) -> Bool {
+    public func verifyPassword(_ password: String) -> Bool {
         return (try? privateKey(password: password)) != nil
     }
     
-    func generateAccount(password: String) throws {
+    public func generateAccount(password: String) throws {
         guard let mnemonics = try BIP39.generateMnemonics(bitsOfEntropy: 128) else {
             throw WalletError.unexpectedResult
         }
@@ -82,7 +82,7 @@ extension EtherCoordinator : AccountService {
         self.mnemonics = nil
     }
     
-    func importAccount(mnemonics: String, password: String) throws {
+    public func importAccount(mnemonics: String, password: String) throws {
         guard let keystore = (try? BIP32Keystore(mnemonics: mnemonics, password: password)) ?? nil else {
             throw WalletError.invalidMnemonics
         }
@@ -122,7 +122,7 @@ extension EtherCoordinator : AccountService {
         
     }
     
-    func loadKeystore() throws -> EthereumKeystoreV3 {
+    public func loadKeystore() throws -> EthereumKeystoreV3 {
         if let keystore = keystoreCache {
             return keystore
         }
