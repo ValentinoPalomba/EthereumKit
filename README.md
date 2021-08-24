@@ -62,7 +62,7 @@ EtherCoordinator.shared.sendToken(to: "0x7777787C97a35d37Db8E5afb0C92BCfd4F6480b
 ## Requirements
 
 - Swift 5.0 or later
-- iOS 9.0 or later
+- iOS 11.0 or later
 
 ## Installation
 
