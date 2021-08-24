@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
     "With this library you can easily use Ethereum Blockchain to create, manage wallet, send transactions, know balance without have a deep knowledge of blockhain structure"
                    DESC
 
- spec.homepage = "https://www.reply.com/it/"
+ spec.homepage = "https://github.com/ValentinoPalomba/EthereumKit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
