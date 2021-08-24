@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CDD759A6130CA265C6D157F4407C39B"
-               BuildableName = "web3swift-Browser.bundle"
+               BuildableName = "Browser.bundle"
                BlueprintName = "web3swift-Browser"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
