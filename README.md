@@ -3,7 +3,7 @@
 </p>
 
 EthereumWalletKit is a Swift framework that enables you to create Ethereum wallet and use it in your app.
-
+}
 ```swift
 // BIP39: Generate seed and mnemonic sentence.
 
