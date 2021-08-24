@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "EthereumKit"
+  spec.name         = "EthereumWalletKit"
   spec.version      = "0.0.1"
   spec.summary      = "An easy way to access to Ethereum Blockchain"
 
