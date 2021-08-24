@@ -1,9 +1,9 @@
-{<p align="center">
+<p align="center">
 <img src="https://user-images.githubusercontent.com/12425729/40763856-5f14764a-64e1-11e8-8684-2f1c8497abd5.png" alt="EthereumKit" height="300px">
 </p>
 
 EthereumWalletKit is a Swift framework that enables you to create Ethereum wallet and use it in your app.
-}
+
 ```swift
 // BIP39: Generate seed and mnemonic sentence.
 
