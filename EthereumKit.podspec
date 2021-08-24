@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "EthereumKit"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of EthereumKit."
+  spec.summary      = "An easy way to access to Ethereum Blockchain"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-    "A short description of EthereumKit.asdasdasd"
+    "With this library you can easily use Ethereum Blockchain to create, manage wallet, send transactions, know balance without have a deep knowledge of blockhain structure"
                    DESC
 
  spec.homepage = "https://www.reply.com/it/"
