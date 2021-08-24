@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://api.kaleido.io/images/icon-ethwallet.png" alt="EthereumKit" height="300px">
+<img src="https://i.pinimg.com/originals/67/dd/e5/67dde5ca7606d1aef2a9b3b9e519d457.png" alt="EthereumKit" height="300px">
 </p>
 
 EthereumWalletKit is a Swift framework that enables you to create Ethereum wallet and use it in your app.
