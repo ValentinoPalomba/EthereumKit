@@ -74,16 +74,24 @@
 		753A498726D46D4B005ACCF2 /* EthereumKit */ = {
 			isa = PBXGroup;
 			children = (
+				753A49B626D473AB005ACCF2 /* Sources */,
+				753A498826D46D4B005ACCF2 /* EthereumKit.h */,
+				753A498926D46D4B005ACCF2 /* Info.plist */,
+			);
+			path = EthereumKit;
+			sourceTree = "<group>";
+		};
+		753A49B626D473AB005ACCF2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
 				753A49AA26D47356005ACCF2 /* AccountService.swift */,
 				753A49A926D47356005ACCF2 /* BalanceService.swift */,
 				753A49A826D47355005ACCF2 /* EtherCoordinator.swift */,
 				753A49AC26D47356005ACCF2 /* InfoService.swift */,
 				753A49A726D47355005ACCF2 /* TransactionService.swift */,
 				753A49AB26D47356005ACCF2 /* WalletError.swift */,
-				753A498826D46D4B005ACCF2 /* EthereumKit.h */,
-				753A498926D46D4B005ACCF2 /* Info.plist */,
 			);
-			path = EthereumKit;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		BCA958E457E47A44AFB675E6 /* Frameworks */ = {
