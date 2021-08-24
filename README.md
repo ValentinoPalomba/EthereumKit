@@ -12,11 +12,14 @@ if !EtherCoordinator.shared.hasAccount {
  //You can check your mnemonics using this variable, and show them to your user
  print(EtherCoordinator.shared.mnemonics)
 } else {
-  // password will be encrypted and saved to the device and it will be required to access the wallet.
-  // Import an existing account from its private key and set its new password.
-  let privateKey = try? EtherCoordinator.shared.privateKey(password: "ABCDEFG")
-  guard let key = privateKey else { return }
-  try? EtherCoordinator.shared.importAccount(privateKey: key, password: "ABCDEFG")
+ // password will be encrypted and saved to the device and it will be required to access the wallet.
+ // Import an existing account from his private key and set its new password.
+/*
+   try? EtherCoordinator.shared.importAccount(privateKey: key, password: "ABCDEFG")
+*/
+ 
+//Or import your account from your password and your mnemonic phrase
+try? EtherCoordinator.shared.importAccount(mnemonics: "logic identify sudden opera net twelve essence task please genuine height road", password: "ABCDEFG")
         
 }
         
