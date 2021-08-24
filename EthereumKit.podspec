@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://ValentinoPalomba/EthereumKit.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ValentinoPalomba/EthereumKit.git", :tag => "#{spec.version}" }
   spec.platform = :ios
   spec.ios.deployment_target = '11.0'
   spec.swift_version = '5.0'
