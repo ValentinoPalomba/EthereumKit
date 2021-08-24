@@ -32,13 +32,13 @@ extension EtherCoordinator : AccountService {
     
     public var mnemonics: String? {
         get {
-            defaults.string(forKey: defaultKey.mnemonics.rawValue)
+            defaults.string(forKey: mnemonicsKeystoreKey)
         }
         set {
             if let newValue = newValue {
-                defaults.setValue(newValue, forKey: defaultKey.mnemonics.rawValue)
+                defaults.setValue(newValue, forKey: mnemonicsKeystoreKey)
             } else {
-                defaults.removeObject(forKey: defaultKey.mnemonics.rawValue)
+                defaults.removeObject(forKey: mnemonicsKeystoreKey)
             }
         }
     }
