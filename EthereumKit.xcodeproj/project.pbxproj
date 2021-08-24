@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		753A498A26D46D4B005ACCF2 /* EthereumKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 753A498826D46D4B005ACCF2 /* EthereumKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		753A499726D46D61005ACCF2 /* WalletError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499126D46D60005ACCF2 /* WalletError.swift */; };
+		753A499826D46D61005ACCF2 /* InfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499226D46D60005ACCF2 /* InfoService.swift */; };
+		753A499926D46D61005ACCF2 /* BalanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499326D46D60005ACCF2 /* BalanceService.swift */; };
+		753A499A26D46D61005ACCF2 /* EtherCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499426D46D60005ACCF2 /* EtherCoordinator.swift */; };
+		753A499B26D46D61005ACCF2 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499526D46D61005ACCF2 /* AccountService.swift */; };
+		753A499C26D46D61005ACCF2 /* TransactionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753A499626D46D61005ACCF2 /* TransactionService.swift */; };
+		8C9A799E08F78743731B8213 /* Pods_EthereumKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAA9290038F4D959E0BBF63 /* Pods_EthereumKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0085A393308683C57E2F9B89 /* Pods-EthereumKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumKit.release.xcconfig"; path = "Target Support Files/Pods-EthereumKit/Pods-EthereumKit.release.xcconfig"; sourceTree = "<group>"; };
+		3BAA9290038F4D959E0BBF63 /* Pods_EthereumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EthereumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7FA8987AE7CD106638FAA9 /* Pods-EthereumKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EthereumKit.debug.xcconfig"; path = "Target Support Files/Pods-EthereumKit/Pods-EthereumKit.debug.xcconfig"; sourceTree = "<group>"; };
 		753A498526D46D4B005ACCF2 /* EthereumKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EthereumKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		753A498826D46D4B005ACCF2 /* EthereumKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EthereumKit.h; sourceTree = "<group>"; };
 		753A498926D46D4B005ACCF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753A499126D46D60005ACCF2 /* WalletError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletError.swift; sourceTree = "<group>"; };
+		753A499226D46D60005ACCF2 /* InfoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoService.swift; sourceTree = "<group>"; };
+		753A499326D46D60005ACCF2 /* BalanceService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceService.swift; sourceTree = "<group>"; };
+		753A499426D46D60005ACCF2 /* EtherCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EtherCoordinator.swift; sourceTree = "<group>"; };
+		753A499526D46D61005ACCF2 /* AccountService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		753A499626D46D61005ACCF2 /* TransactionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9A799E08F78743731B8213 /* Pods_EthereumKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		473B7DDC55FA1052F9279FFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A7FA8987AE7CD106638FAA9 /* Pods-EthereumKit.debug.xcconfig */,
+				0085A393308683C57E2F9B89 /* Pods-EthereumKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		753A497B26D46D4B005ACCF2 = {
 			isa = PBXGroup;
 			children = (
 				753A498726D46D4B005ACCF2 /* EthereumKit */,
 				753A498626D46D4B005ACCF2 /* Products */,
+				473B7DDC55FA1052F9279FFC /* Pods */,
+				BCA958E457E47A44AFB675E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +75,24 @@
 		753A498726D46D4B005ACCF2 /* EthereumKit */ = {
 			isa = PBXGroup;
 			children = (
+				753A499526D46D61005ACCF2 /* AccountService.swift */,
+				753A499326D46D60005ACCF2 /* BalanceService.swift */,
+				753A499426D46D60005ACCF2 /* EtherCoordinator.swift */,
+				753A499226D46D60005ACCF2 /* InfoService.swift */,
+				753A499626D46D61005ACCF2 /* TransactionService.swift */,
+				753A499126D46D60005ACCF2 /* WalletError.swift */,
 				753A498826D46D4B005ACCF2 /* EthereumKit.h */,
 				753A498926D46D4B005ACCF2 /* Info.plist */,
 			);
 			path = EthereumKit;
+			sourceTree = "<group>";
+		};
+		BCA958E457E47A44AFB675E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BAA9290038F4D959E0BBF63 /* Pods_EthereumKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 753A498D26D46D4B005ACCF2 /* Build configuration list for PBXNativeTarget "EthereumKit" */;
 			buildPhases = (
+				78A10F8CDF4CB50966742CDC /* [CP] Check Pods Manifest.lock */,
 				753A498026D46D4B005ACCF2 /* Headers */,
 				753A498126D46D4B005ACCF2 /* Sources */,
 				753A498226D46D4B005ACCF2 /* Frameworks */,
@@ -94,6 +138,7 @@
 				TargetAttributes = {
 					753A498426D46D4B005ACCF2 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -125,11 +170,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78A10F8CDF4CB50966742CDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EthereumKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		753A498126D46D4B005ACCF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753A499C26D46D61005ACCF2 /* TransactionService.swift in Sources */,
+				753A499726D46D61005ACCF2 /* WalletError.swift in Sources */,
+				753A499A26D46D61005ACCF2 /* EtherCoordinator.swift in Sources */,
+				753A499826D46D61005ACCF2 /* InfoService.swift in Sources */,
+				753A499B26D46D61005ACCF2 /* AccountService.swift in Sources */,
+				753A499926D46D61005ACCF2 /* BalanceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +336,9 @@
 		};
 		753A498E26D46D4B005ACCF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A7FA8987AE7CD106638FAA9 /* Pods-EthereumKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2L3FY5AUSJ;
@@ -277,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ValentinoPalomba.EthereumKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +363,9 @@
 		};
 		753A498F26D46D4B005ACCF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0085A393308683C57E2F9B89 /* Pods-EthereumKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 2L3FY5AUSJ;
